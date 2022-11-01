@@ -13,7 +13,7 @@ pub extern "C" fn yomo_init() {
 
 #[no_mangle]
 pub extern "C" fn yomo_handler(input_length: usize) {
-    println!("wasm rust sfn received {} bytes", input_length);
+    // println!("wasm rust sfn received {} bytes", input_length);
 
     // load input data
     let mut input = Vec::with_capacity(input_length);
